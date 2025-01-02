@@ -1,6 +1,3 @@
-# board.py
-from board import Board
-import tkinter as tk
 import random
 import tkinter as tk  # Importer tkinter pour la création de l'interface graphique
 
@@ -8,14 +5,14 @@ color_yellow = "#ffde57"  # Couleur jaune pour le texte
 
 
 class Board:
-    def __init__(self, frame, mode, joueur_symbole, bot_symbole, bot_type):
+    def __init__(self, frame, mode, joueur_symbole, bot_symbole=None, bot_type=None):
         self.frame = frame
         self.mode = mode  # Le mode est soit 'bot', soit 'two_players'
         self.joueur_symbole = joueur_symbole
         self.bot_symbole = bot_symbole
         self.bot_type = bot_type
         self.grille = ["-"] * 9
-        self.joueur_actuel = "X"
+        self.joueur_actuel = joueur_symbole
         self.jeu_termine = False
         self.coups = 0
 
@@ -100,7 +97,7 @@ class Board:
     def reset_game(self):
         """ Réinitialise le jeu """
         self.grille = ["-"] * 9
-        self.joueur_actuel = "X"
+        self.joueur_actuel = self.joueur_symbole
         self.jeu_termine = False
         self.coups = 0
         self.setup_game()
@@ -157,9 +154,3 @@ class Board:
                 self.bot_facile()
             elif self.bot_type == "difficile":
                 self.kenza_bot()
-
-
-ihm.py
-
-color_gray = "#343434"
-color_blue = "#4584b6"
