@@ -1,3 +1,4 @@
+# main.py
 from ihm import IHM
 
 if __name__ == "__main__":

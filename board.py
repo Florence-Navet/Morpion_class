@@ -1,3 +1,6 @@
+# board.py
+from board import Board
+import tkinter as tk
 import random
 import tkinter as tk  # Importer tkinter pour la création de l'interface graphique
 
@@ -5,10 +8,11 @@ color_yellow = "#ffde57"  # Couleur jaune pour le texte
 
 
 class Board:
-    def __init__(self, frame, mode, bot_type=None):
+    def __init__(self, frame, mode, joueur_symbole, bot_symbole, bot_type):
         self.frame = frame
         self.mode = mode  # Le mode est soit 'bot', soit 'two_players'
-        # Nouveau paramètre pour définir le type de bot ('facile' ou 'difficile')
+        self.joueur_symbole = joueur_symbole
+        self.bot_symbole = bot_symbole
         self.bot_type = bot_type
         self.grille = ["-"] * 9
         self.joueur_actuel = "X"
@@ -33,11 +37,10 @@ class Board:
                                                       command=lambda row=row, column=column: self.jouer_coup(row, column))
                 self.boutons[row][column].grid(row=row + 1, column=column)
 
-        self.rejouer_button = tk.Button(self.frame, text="Rejouer", font=("Consolas", 20), background="#343434", foreground="white",
-                                        command=self.reset_game)
+        self.rejouer_button = tk.Button(self.frame, text="Rejouer", font=("Consolas", 20), background="#343434",
+                                        foreground="white", command=self.reset_game)
         self.rejouer_button.grid(row=4, column=0, columnspan=3, sticky="we")
 
-        # Si on joue contre le bot et que c'est au tour du bot (O), le bot joue immédiatement
         if self.mode == "bot" and self.joueur_actuel == "O":
             self.tour_du_bot()
 
@@ -52,13 +55,12 @@ class Board:
         vainqueur = self.verifier_vainqueur()
         if vainqueur:
             if vainqueur == "égalité":
-                self.label.config(text="Egalité !", foreground="#ffde57")
+                self.label.config(text="Égalité !", foreground=color_yellow)
             else:
                 self.label.config(text=f"Le joueur {
-                                  vainqueur} a gagné!", foreground="#ffde57")
+                                  vainqueur} a gagné!", foreground=color_yellow)
         else:
             self.changer_joueur()
-            # Si on joue contre le bot et que c'est au tour du bot (O), le bot joue
             if self.mode == "bot" and self.joueur_actuel == "O":
                 self.tour_du_bot()
 
@@ -73,7 +75,7 @@ class Board:
         for combinaison in combinaisons:
             if self.grille[combinaison[0]] == self.grille[combinaison[1]] == self.grille[combinaison[2]] != "-":
                 self.jeu_termine = True
-                gagnant = self.grille[combinaison[0]]  # "X" ou "O"
+                gagnant = self.grille[combinaison[0]]
 
                 if gagnant == "O":
                     self.label.config(text="Le bot a gagné!",
@@ -105,6 +107,9 @@ class Board:
 
     def bot_facile(self):
         """ Le bot fait un coup au hasard """
+        if self.jeu_termine:
+            return
+
         cases_vides = [i for i, case in enumerate(self.grille) if case == "-"]
         choix = random.choice(cases_vides)
         ligne, colonne = divmod(choix, 3)
@@ -152,3 +157,9 @@ class Board:
                 self.bot_facile()
             elif self.bot_type == "difficile":
                 self.kenza_bot()
+
+
+ihm.py
+
+color_gray = "#343434"
+color_blue = "#4584b6"
