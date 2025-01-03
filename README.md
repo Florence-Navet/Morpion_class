@@ -33,8 +33,7 @@ Avant de pouvoir lancer le jeu, vous devez avoir Python installé sur votre mach
 
 Clonez ce dépôt GitHub sur votre machine locale en utilisant Git ou téléchargez le fichier ZIP.  
 
-1.*Lancer le jeu*  
------------------  
+### <u>1. Lancer le jeu</u>  
 Accédez au dossier du projet  
 Ouvrez un terminal ou une invite de commande.  
 Déplacez-vous dans le répertoire du projet avec la commande suivante :  
