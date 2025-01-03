@@ -35,7 +35,7 @@ Clonez ce dépôt GitHub sur votre machine locale en utilisant Git ou téléchar
 
 ### 1. Lancer le jeu  
 
-```
+````markdown
 Accédez au dossier du projet  
 Ouvrez un terminal ou une invite de commande.  
 Déplacez-vous dans le répertoire du projet avec la commande suivante :  
