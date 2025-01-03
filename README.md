@@ -2,14 +2,17 @@
 morpion avec des class
 # Morpion - Tic Tac Toe
 
-Un jeu de **Morpion** (Tic Tac Toe) avec une interface graphique développée en Python, utilisant la bibliothèque **Tkinter** pour l'interface utilisateur et permettant de jouer contre un **bot** ou un autre joueur en mode **multijoueur**.
+Un jeu de **Morpion** (Tic Tac Toe) avec une interface graphique développée en Python, 
+utilisant la bibliothèque **Tkinter** pour l'interface utilisateur et permettant de jouer 
+contre un **bot** ou un autre joueur en mode **multijoueur**.
 
 ## Fonctionnalités
 
 - Mode **1 joueur** : Jouez contre un **bot** (facile ou difficile).
 - Mode **2 joueurs** : Jouez avec un ami sur le même ordinateur.
 - Choix du symbole : Choisissez entre **X** ou **O**.
-- **Niveaux de difficulté du bot** : Le bot peut être en mode facile (choix aléatoire) ou difficile (algorithme de stratégie pour gagner ou bloquer).
+- **Niveaux de difficulté du bot** : Le bot peut être en mode facile (choix aléatoire)
+  ou difficile (algorithme de stratégie pour gagner ou bloquer).
 
 ## Prérequis
 
@@ -46,11 +49,13 @@ Cela ouvrira la fenêtre graphique du jeu Tic Tac Toe.
 2.Interface de jeu
 Une fois l'interface lancée, vous pourrez choisir le mode de jeu :
 
-3.Jouer contre le Bot : Vous pouvez jouer contre un bot. Le bot vous affrontera en choisissant entre le mode facile ou difficile.
+3.Jouer contre le Bot : Vous pouvez jouer contre un bot. Le bot vous affrontera 
+en choisissant entre le mode facile ou difficile.
 Jouer à 2 joueurs : Vous pouvez jouer avec un autre joueur sur le même ordinateur.
 Ensuite, vous choisissez votre symbole (X ou O).
 
-Vous jouez ensuite en cliquant sur les cases du plateau. Le jeu met à jour l'interface après chaque coup et indique le vainqueur à la fin.
+Vous jouez ensuite en cliquant sur les cases du plateau. Le jeu met à jour 
+l'interface après chaque coup et indique le vainqueur à la fin.
 
 4.Rejouer
 Après chaque partie, un bouton "Rejouer" vous permet de recommencer une nouvelle partie.
