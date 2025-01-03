@@ -49,12 +49,12 @@ bash
 Copier le code : ````python main.py````  
 Cela ouvrira la fenêtre graphique du jeu Tic Tac Toe.  
 
-### 2.Interface de jeu  
+### 2. Interface de jeu  
 ----------------------
 
 Une fois l'interface lancée, vous pourrez choisir le mode de jeu :  
 
-### 3.Jouer contre le Bot :  
+### 3. Jouer contre le Bot :  
 ------------------------
 
 Vous pouvez jouer contre un bot. Le bot vous affrontera   
@@ -65,7 +65,7 @@ Ensuite, vous choisissez votre symbole (X ou O).
 Vous jouez ensuite en cliquant sur les cases du plateau. Le jeu met à jour   
 l'interface après chaque coup et indique le vainqueur à la fin.  
 
-### 4.Rejouer 
+### 4. Rejouer 
 ----------------------
 
 Après chaque partie, un bouton "Rejouer" vous permet de recommencer une nouvelle partie.
