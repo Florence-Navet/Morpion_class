@@ -35,7 +35,7 @@ Clonez ce dépôt GitHub sur votre machine locale en utilisant Git ou téléchar
 
 ### 1. Lancer le jeu  
 
-````markdown
+````
 Accédez au dossier du projet  
 Ouvrez un terminal ou une invite de commande.  
 Déplacez-vous dans le répertoire du projet avec la commande suivante :  
@@ -48,6 +48,7 @@ Exécutez le fichier main.py pour démarrer l'application avec la commande suiva
 python main.py
 ```
 Cela ouvrira la fenêtre graphique du jeu Tic Tac Toe.
+````
 
 
 ### 2. Interface de jeu  
