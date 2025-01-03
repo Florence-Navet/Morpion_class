@@ -37,17 +37,6 @@ Clonez ce dépôt GitHub sur votre machine locale en utilisant Git ou téléchar
 
 ```
 
-### Explication :
-
-1. **Bloc extérieur** : Utilisez quatre backticks (````) pour délimiter l'ensemble du bloc.
-2. **Blocs à l'intérieur** : Utilisez trois backticks (```) pour les blocs de code à l'intérieur de ce bloc principal.
-
-### Résultat visuel :
-Quand ce bloc Markdown est rendu (par exemple sur GitHub ou dans un générateur Markdown), vous aurez un grand bloc contenant des sous-blocs de code à l'intérieur, ce qui permet d'afficher proprement plusieurs niveaux de code sans qu'ils ne se mélangent.
-
-### Résultat attendu :
-
-Le rendu sera quelque chose comme cela :
 
 ````markdown
 Accédez au dossier du projet  
