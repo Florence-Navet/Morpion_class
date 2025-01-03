@@ -35,20 +35,34 @@ Clonez ce dépôt GitHub sur votre machine locale en utilisant Git ou téléchar
 
 ### 1. Lancer le jeu  
 
-````
+```
+
+### Explication :
+
+1. **Bloc extérieur** : Utilisez quatre backticks (````) pour délimiter l'ensemble du bloc.
+2. **Blocs à l'intérieur** : Utilisez trois backticks (```) pour les blocs de code à l'intérieur de ce bloc principal.
+
+### Résultat visuel :
+Quand ce bloc Markdown est rendu (par exemple sur GitHub ou dans un générateur Markdown), vous aurez un grand bloc contenant des sous-blocs de code à l'intérieur, ce qui permet d'afficher proprement plusieurs niveaux de code sans qu'ils ne se mélangent.
+
+### Résultat attendu :
+
+Le rendu sera quelque chose comme cela :
+
+````markdown
 Accédez au dossier du projet  
 Ouvrez un terminal ou une invite de commande.  
 Déplacez-vous dans le répertoire du projet avec la commande suivante :  
-bash
-Copier le code  
-````cd chemin/vers/le/dossier/morpion````  
-Pour éxecuter le fichier  
+```bash
+cd chemin/vers/le/dossier/morpion
+```
+Pour exécuter le fichier  
 Exécutez le fichier main.py pour démarrer l'application avec la commande suivante :  
-
-bash  
-Copier le code : ````python main.py````  
+```bash
+python main.py
+```
 Cela ouvrira la fenêtre graphique du jeu Tic Tac Toe.
-````
+
 
 ### 2. Interface de jeu  
 
