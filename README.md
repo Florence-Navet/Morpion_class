@@ -29,33 +29,30 @@ Avant de pouvoir lancer le jeu, vous devez avoir Python installé sur votre mach
 
 Clonez ce dépôt GitHub sur votre machine locale en utilisant Git ou téléchargez le fichier ZIP.
 
-```bash
-git clone https://github.com/votre_utilisateur/morpion.git
- 
-Accédez au dossier du projet :
-
+###Lancer le jeu
+Accédez au dossier du projet
 Ouvrez un terminal ou une invite de commande.
 Déplacez-vous dans le répertoire du projet avec la commande suivante :
 bash
 Copier le code
-cd chemin/vers/le/dossier/morpion
-Lancez le jeu :
-
+````cd chemin/vers/le/dossier/morpion````
+Lancer le jeu
 Exécutez le fichier main.py pour démarrer l'application avec la commande suivante :
+
 bash
-Copier le code
-python main.py
+Copier le code : ````python main.py````
 Cela ouvrira la fenêtre graphique du jeu Tic Tac Toe.
-Interface de jeu :
 
+###Interface de jeu
 Une fois l'interface lancée, vous pourrez choisir le mode de jeu :
-Jouer contre le Bot : Vous pouvez jouer contre un bot. Le bot vous affrontera en choisissant entre le mode facile ou difficile.
+
+###Jouer contre le Bot : Vous pouvez jouer contre un bot. Le bot vous affrontera en choisissant entre le mode facile ou difficile.
 Jouer à 2 joueurs : Vous pouvez jouer avec un autre joueur sur le même ordinateur.
-Vous choisissez ensuite votre symbole (X ou O).
-Ensuite, vous jouez en cliquant sur les cases du plateau. Le jeu met à jour l'interface après chaque coup et indique le vainqueur à la fin.
-Rejouer :
+Ensuite, vous choisissez votre symbole (X ou O).
 
+Vous jouez ensuite en cliquant sur les cases du plateau. Le jeu met à jour l'interface après chaque coup et indique le vainqueur à la fin.
+
+###Rejouer
 Après chaque partie, un bouton "Rejouer" vous permet de recommencer une nouvelle partie.
-
 
 
